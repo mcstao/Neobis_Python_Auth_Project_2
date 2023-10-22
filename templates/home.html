@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+{% if messages %}
+    {% for message in messages %}
+        {{ message|safe }}
+    {% endfor %}
+{% endif %}
 <h1>Главная страница</h1>
     <hr>
 
